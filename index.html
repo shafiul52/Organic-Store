@@ -20,33 +20,110 @@
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
 
-
+        <style>
+            .poppins-font{
+                font-Family: "Poppins", sans-serif;
+            }
+        </style>
         <!-- tailwind css configuration  -->
 
         <script>
-            tailwind.config = {
-              theme: {
-                extend: {
-                  colors: {
-                    clifford: '#da373d',
-                  }
-                }
-              }
-            }
-          </script>
-          
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  clifford: '#da373d',
+                  primary: 'rgb(139, 195, 74)',
+                  secondary: 'rgb(17, 17, 17)',
+                  body: 'rgb(248, 246, 243)',
+                  accent: 'rgb(106, 151, 57)',
+                  body_neutral: 'rgb(51, 51, 51)',
+                },
 
+                backgroundImage: {
+                        leaf1: "url('./images/leaf01.png')",
+                        call_to_action: "url('./images/call.jpg')",
+                        testimonials: "url('./images/testimonials.jpg')",
+                    },
 
-
-        <style>
-            .poppins-font{
-                font-family: "Poppins", sans-serif;
-            }
-        </style>
+              },
+            },
+          }
+        </script>
 
 </head>
 <body class="poppins-font">
-    <h3> Hello I am poppins font</h3>
+    <!-- Header Section Start -->
+     <header> 
+
+      <nav class="w-11/12 mx-auto">
+        <div class="navbar p-0 py-2">
+          <div class="navbar-start">
+            
+            <a href="#" class="">
+              <img class="w-36" src="./images/logo.svg" alt="">
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg font-medium">
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Home </a></li>
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Everything </a></li>
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a> Groceries</a></li>
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a> About</a></li>
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a> Contact</a></li>
+
+             
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <!-- $ cart profile section start  -->
+            <div class="flex items-center gap-5 text-lg"> 
+              <button class=" flex items-center gap-2 font-semibold text-accent">
+                <span>$20.00</span>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+
+              <button>
+                <i class="fa-solid fa-user"></i>
+              </button>
+
+            </div>
+           <!-- $ cart profile section End  -->
+
+            <div class="dropdown">
+              
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0 gap-5">
+
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Home </a></li>
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Everything </a></li>
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a> Groceries</a></li>
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a> About</a></li>
+              <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a> Contact</a></li>
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    
+    </header>
+
+
+
+            <main>
+            
+            </main>
+
+    <footer>
+        
+    </footer>
     
 </body>
 </html>
